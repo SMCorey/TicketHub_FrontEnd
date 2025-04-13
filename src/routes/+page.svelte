@@ -1,8 +1,8 @@
 <script lang="ts">
     import type { TicketFormData, FormErrors } from '$lib';
 
-    const apiUrl = import.meta.env.VITE_API_URL_POST;
-  
+    const apiUrl = "https://nscc-0460670-tickethub-api-inft4000-efa8acc3dpg4g7c4.canadacentral-01.azurewebsites.net/api/TicketOrder";
+    
     let formData = $state<TicketFormData>({
       concertId: 2,
       email: '',
