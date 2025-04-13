@@ -1,6 +1,8 @@
 <script lang="ts">
     // import { $ } from 'svelte/runes';
     import type { TicketFormData, FormErrors } from '$lib';
+
+    const apiUrl = import.meta.env.API_URL_POST;
   
     let formData = $state<TicketFormData>({
       concertId: 2,
@@ -74,7 +76,7 @@
       isSubmitting = true;
   
       try {
-        const response = await fetch('YOUR_API_ENDPOINT', {
+        const response = await fetch(apiUrl, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
