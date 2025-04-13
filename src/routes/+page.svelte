@@ -1,5 +1,4 @@
 <script lang="ts">
-    // import { $ } from 'svelte/runes';
     import type { TicketFormData, FormErrors } from '$lib';
 
     const apiUrl = import.meta.env.API_URL_POST;
@@ -97,8 +96,6 @@
       }
     }
   </script>
-  
-  <!-- Rest of your component remains the same -->
 
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
     <!-- Page header -->
