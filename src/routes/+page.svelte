@@ -1,7 +1,7 @@
 <script lang="ts">
     import type { TicketFormData, FormErrors } from '$lib';
 
-    const apiUrl = import.meta.env.API_URL_POST;
+    const apiUrl = import.meta.env.VITE_API_URL_POST;
   
     let formData = $state<TicketFormData>({
       concertId: 2,
